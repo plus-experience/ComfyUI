@@ -215,7 +215,8 @@ if __name__ == "__main__":
             load_extra_path_config(config_path)
 
     init_custom_nodes()
-
+    import nodes
+    print(nodes.NODE_CLASS_MAPPINGS)
     cuda_malloc_warning()
 
     server.add_routes()
